@@ -98,6 +98,7 @@ public void evaluateHands()
 
         if (playerHand > computerHand ){
             Console.WriteLine("Player WINS!");
+            //Console.WriteLine($"you won {oldbet}");
         }
         else if (playerHand<computerHand){
             Console.WriteLine("Computer WINS!");

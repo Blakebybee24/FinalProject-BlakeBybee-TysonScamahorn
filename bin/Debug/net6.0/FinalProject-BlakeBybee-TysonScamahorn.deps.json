@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "FinalProject-BlakeBybee-TysonScamahorn/1.0.0": {
+        "runtime": {
+          "FinalProject-BlakeBybee-TysonScamahorn.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FinalProject-BlakeBybee-TysonScamahorn/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

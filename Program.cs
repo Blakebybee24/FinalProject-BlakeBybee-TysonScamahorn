@@ -1,10 +1,11 @@
 ﻿using finalproject;
 
-Console.SetWindowSize(60,30);
-Console.BufferWidth=60;
-Console.BufferHeight = 30;
+Console.SetWindowSize(90,45);
+Console.BufferWidth=90;
+Console.BufferHeight = 45;
 Console.Title = "Poker Game";
 DealCards dc= new DealCards();
+
 bool quit = false;
 while(!quit)
 {

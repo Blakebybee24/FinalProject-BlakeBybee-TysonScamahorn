@@ -1,0 +1,15 @@
+C:\Users\tyson\my-code-dir\FinalProject-BlakeBybee-TysonScamahorn\obj\Debug\net6.0\FinalProject-BlakeBybee-TysonScamahorn.csproj.AssemblyReference.cache
+C:\Users\tyson\my-code-dir\FinalProject-BlakeBybee-TysonScamahorn\obj\Debug\net6.0\FinalProject-BlakeBybee-TysonScamahorn.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tyson\my-code-dir\FinalProject-BlakeBybee-TysonScamahorn\obj\Debug\net6.0\FinalProject-BlakeBybee-TysonScamahorn.AssemblyInfoInputs.cache
+C:\Users\tyson\my-code-dir\FinalProject-BlakeBybee-TysonScamahorn\obj\Debug\net6.0\FinalProject-BlakeBybee-TysonScamahorn.AssemblyInfo.cs
+C:\Users\tyson\my-code-dir\FinalProject-BlakeBybee-TysonScamahorn\obj\Debug\net6.0\FinalProject-BlakeBybee-TysonScamahorn.csproj.CoreCompileInputs.cache
+C:\Users\tyson\my-code-dir\FinalProject-BlakeBybee-TysonScamahorn\bin\Debug\net6.0\FinalProject-BlakeBybee-TysonScamahorn.exe
+C:\Users\tyson\my-code-dir\FinalProject-BlakeBybee-TysonScamahorn\bin\Debug\net6.0\FinalProject-BlakeBybee-TysonScamahorn.deps.json
+C:\Users\tyson\my-code-dir\FinalProject-BlakeBybee-TysonScamahorn\bin\Debug\net6.0\FinalProject-BlakeBybee-TysonScamahorn.runtimeconfig.json
+C:\Users\tyson\my-code-dir\FinalProject-BlakeBybee-TysonScamahorn\bin\Debug\net6.0\FinalProject-BlakeBybee-TysonScamahorn.dll
+C:\Users\tyson\my-code-dir\FinalProject-BlakeBybee-TysonScamahorn\bin\Debug\net6.0\FinalProject-BlakeBybee-TysonScamahorn.pdb
+C:\Users\tyson\my-code-dir\FinalProject-BlakeBybee-TysonScamahorn\obj\Debug\net6.0\FinalProject-BlakeBybee-TysonScamahorn.dll
+C:\Users\tyson\my-code-dir\FinalProject-BlakeBybee-TysonScamahorn\obj\Debug\net6.0\refint\FinalProject-BlakeBybee-TysonScamahorn.dll
+C:\Users\tyson\my-code-dir\FinalProject-BlakeBybee-TysonScamahorn\obj\Debug\net6.0\FinalProject-BlakeBybee-TysonScamahorn.pdb
+C:\Users\tyson\my-code-dir\FinalProject-BlakeBybee-TysonScamahorn\obj\Debug\net6.0\FinalProject-BlakeBybee-TysonScamahorn.genruntimeconfig.cache
+C:\Users\tyson\my-code-dir\FinalProject-BlakeBybee-TysonScamahorn\obj\Debug\net6.0\ref\FinalProject-BlakeBybee-TysonScamahorn.dll

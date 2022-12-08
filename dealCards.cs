@@ -21,26 +21,30 @@ namespace finalproject
          {
             setUpDeck();
             shuffleCards();
-            getHand();
+            getplayerHand();
             sortCards();
             displayCards();
+           bid();
+           Console.ReadKey();
+            diplaycomputercards();
             evaluateHands();
          }
-    public void getHand()
+    public void getplayerHand()
     {
         for(int i =0;i<5;i++)
         {
             playerHand[i]= getDeck[i];
 
         }
+
         for(int i =5;i<10;i++)
         {
             computerHand[i-5]= getDeck[i];
 
-        }
-
+            }
 
     }
+     
         
     public void sortCards()
     {
@@ -73,9 +77,11 @@ namespace finalproject
             DrawCards.DrawCardSuitValue(sortedPlayerHand[i],x,y);
             x++;
 
+    }
         }
-        y = 15;
-        x=0;
+        public void diplaycomputercards(){
+        int y = 15;
+        int x=0;
         Console.SetCursorPosition(x,14);
         Console.ForegroundColor = ConsoleColor.DarkRed;
         Console.WriteLine("Computer's Hand");
@@ -84,8 +90,7 @@ namespace finalproject
             //DrawCards.DrawCardOutline(x,y);
             DrawCards.DrawCardSuitValue(sortedComputerHand[i-5],x,y);
             x++;
-        }
-    }
+        }}
      
 public void evaluateHands()
     {
@@ -126,5 +131,43 @@ public void evaluateHands()
         }
         }
     }
+    public void bid(){
+        int user =2500;
+        int thecomp = 2500;
+       int bet;
+    bool keepgoing = true;
+    int oldbet = 0;
+    while(keepgoing ==true){
+    string action="";
+    Console.WriteLine("please chose to raise, fold or check."); 
+   action = Convert.ToString(Console.ReadLine().ToUpper());
+    if(action == "RAISE"){
+        Console.WriteLine($"You have {user} left");
+        Console.WriteLine($"please chose how much you want to bid?");
+         bet = Convert.ToInt32(Console.ReadLine());
+        if(bet < user){
+           oldbet = bet +oldbet;
+           Console.WriteLine($"the current bet is {oldbet}");
+            
+        }
+        else if(bet > user){
+
+        }
+    }
+    else if(action == "FOLD"){
+        
+        keepgoing = false;
+    }
+    else if(action == "CHECK"){
+        
+        keepgoing = false;
+    }
+    
+    else{
+        Console.WriteLine("Try again");
+    }
+    
+    }
+}
     }
 }

@@ -9,27 +9,34 @@ DealCards dc= new DealCards();
 bool quit = false;
 while(!quit)
 {
-    Console.BackgroundColor = ConsoleColor.DarkMagenta;
+    Console.BackgroundColor = ConsoleColor.DarkCyan;
     dc.Deal();
     Console.ReadKey();
     Console.Clear();
-    char selection = ' ';
+    string selection = " ";
     while(!selection.Equals('Y')&& !selection.Equals('N'))
     {
         Console.WriteLine("Do you want to play agian? Y/N");
-        selection = Convert.ToChar(Console.ReadLine().ToUpper());
-        if( selection.Equals('Y')){
+        selection = Convert.ToString(Console.ReadLine().ToUpper());
+        if( selection.Equals("Y")){
             quit = false;
+            break;
         }
-        else if (selection.Equals('N'))
+        else if (selection.Equals("N"))
         {
             quit = true;
-
+            break;
         }
-        else
+        else if(selection !=""){
+            Console.WriteLine("Invalid selection. Try again");
+            continue;
+        }
+        else{
         Console.WriteLine("Invalid selection. Try again");
+        }
     }
 }
 
-Console.ReadKey();
+
+
 

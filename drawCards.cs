@@ -14,10 +14,10 @@ namespace finalproject
             for (int i = 0; i < 10; i++){
                 Console.SetCursorPosition(x,y+1+i);
 
-                if(i <5){
+                if(i <4){
                 Console.WriteLine("|          |");
                 }
-                if(i == 5){
+                if(i == 4){
                     switch(card.mySuit){
                 case Card.Suit.Hearts :
                  Console.Write("|  ");
@@ -55,7 +55,7 @@ namespace finalproject
             }
             
                 }
-            if(i>5&&i<9){
+            if(i>4&&i<9){
                 Console.WriteLine("|          |");}
                 if(i == 9) {
                     Console.WriteLine("|__________|");

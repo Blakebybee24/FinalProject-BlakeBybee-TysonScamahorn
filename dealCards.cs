@@ -8,7 +8,9 @@ namespace finalproject
          private Card[] computerHand;
          private Card[] sortedPlayerHand;
          private Card[] sortedComputerHand;
-
+        int user =2500;
+        int thecomp = 2500000;
+        int bet = 0;
          public DealCards()
          {
             playerHand = new Card[5];
@@ -105,69 +107,82 @@ public void evaluateHands()
         if (playerHand > computerHand ){
             Console.WriteLine("Player WINS!");
             //Console.WriteLine($"you won {oldbet}");
+            user =user + bet;
+            Console.WriteLine($"you currently have {user}$ left" );
         }
         else if (playerHand<computerHand){
             Console.WriteLine("Computer WINS!");
-
+             user =user - bet;
+             Console.WriteLine($"you currently have {user}$ left" );
         }
         else {
             if(playerHandEvaluator.HandValues.Total > computerHandEvaluator.HandValues.Total){
                 Console.WriteLine("Player WINS!");
+                user =user + bet;
+                Console.WriteLine($"you currently have {user}$ left" );
             }
             else if (playerHandEvaluator.HandValues.Total< computerHandEvaluator.HandValues.Total){
                 Console.WriteLine("Computer WINS!");
-
+                 user =user - bet;
+                 Console.WriteLine($"you currently have {user}$ left" );
             }
         else if (playerHandEvaluator.HandValues.HighCard> computerHandEvaluator.HandValues.HighCard){
             Console.WriteLine("Player WINS!");
-
+            user =user + bet;
+            Console.WriteLine($"you currently have {user}$ left" );
         }
         else if (playerHandEvaluator.HandValues.HighCard < computerHandEvaluator.HandValues.HighCard){
             Console.WriteLine("Computer WINS!");
+            user =user - bet;
+            Console.WriteLine($"you currently have {user}$ left" );
 
         }
         else {
             Console.WriteLine("Draw, no one wins!");
+            Console.WriteLine($"you currently have {user}$ left" );
         }
         }
     }
     public void bid(){
-        int user =2500;
-        int thecomp = 2500;
-       int bet;
-    bool keepgoing = true;
-    int oldbet = 0;
-    while(keepgoing ==true){
+        
+    if (user == 0){user = 100;}
+    
+    
+        bet=0;
     string action="";
-    Console.WriteLine("please chose to raise, fold or check."); 
+    Console.SetCursorPosition(0,15);
+    Console.WriteLine("please chose to raise or fold.");
+
+   bool go = true;
+    while(go){
    action = Convert.ToString(Console.ReadLine().ToUpper());
     if(action == "RAISE"){
-        Console.WriteLine($"You have {user} left");
+       
+        Console.WriteLine($"You have {user}$ left");
         Console.WriteLine($"please chose how much you want to bid?");
          bet = Convert.ToInt32(Console.ReadLine());
+        
         if(bet < user){
-           oldbet = bet +oldbet;
-           Console.WriteLine($"the current bet is {oldbet}");
-            
+           
+           Console.WriteLine($"the current bet is {bet}$");
+            go = false;
         }
-        else if(bet > user){
-
+        else if(bet >= user){
+            bet = user;
+            Console.WriteLine("All In");
+            go= false;
         }
     }
     else if(action == "FOLD"){
-        
-        keepgoing = false;
+        go = false;
+        user = user-25;
     }
-    else if(action == "CHECK"){
-        
-        keepgoing = false;
-    }
+    
     
     else{
         Console.WriteLine("Try again");
     }
+    }
+    }
+}}
     
-    }
-}
-    }
-}

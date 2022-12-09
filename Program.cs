@@ -15,7 +15,7 @@ while(!quit)
     Console.Clear();
     string selection = " ";
     while(!selection.Equals('Y')&& !selection.Equals('N'))
-    {
+    {   
         Console.WriteLine("Do you want to play agian? Y/N");
         selection = Convert.ToString(Console.ReadLine().ToUpper());
         if( selection.Equals("Y")){

@@ -71,7 +71,7 @@ namespace finalproject
         Console.Clear();
         int x =0;
         int y = 1;
-        Console.ForegroundColor = ConsoleColor.DarkGreen;
+        Console.ForegroundColor = ConsoleColor.Black;
         Console.WriteLine("Player's Hand");
         for (int i = 0; i<5; i++)
         {
@@ -85,7 +85,7 @@ namespace finalproject
         int y = 15;
         int x=0;
         Console.SetCursorPosition(x,14);
-        Console.ForegroundColor = ConsoleColor.DarkRed;
+        Console.ForegroundColor = ConsoleColor.Black;
         Console.WriteLine("Computer's Hand");
         for(int i =5; i<10; i++)
         {

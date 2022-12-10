@@ -5,7 +5,8 @@ Console.BufferWidth=90;
 Console.BufferHeight = 45;
 Console.Title = "Poker Game";
 DealCards dc= new DealCards();
-
+rules display = new rules();
+display.rule();
 bool quit = false;
 while(!quit)
 {
